@@ -112,6 +112,7 @@
 	    </configuration>
 	  </plugin>
 	  
+<distributionManagement>
     <repository>
       <id>deployment</id>
       <name>Releases</name>
@@ -122,6 +123,7 @@
       <name>Snapshots</name>
       <url>http://10.23.14.168:8080/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
+</distributionManagement>
   
 	  
  
