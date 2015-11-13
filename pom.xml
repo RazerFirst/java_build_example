@@ -8,6 +8,19 @@
   <name>WebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
+<distributionManagement>
+    <repository>
+      <id>deployment</id>
+      <name>Releases</name>
+      <url>http://10.23.14.168:8080/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>deployment</id>
+      <name>Snapshots</name>
+      <url>http://10.23.14.168:8080/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+</distributionManagement>
+  
   <properties>
 	<jdk.version>1.7</jdk.version>
 	<spring.version>4.1.1.RELEASE</spring.version>
@@ -111,19 +124,6 @@
 		<path>/CounterWebApp</path>
 	    </configuration>
 	  </plugin>
-	  
-<distributionManagement>
-    <repository>
-      <id>deployment</id>
-      <name>Releases</name>
-      <url>http://10.23.14.168:8080/nexus/content/repositories/releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>deployment</id>
-      <name>Snapshots</name>
-      <url>http://10.23.14.168:8080/nexus/content/repositories/snapshots</url>
-    </snapshotRepository>
-</distributionManagement>
   
 	  
  
